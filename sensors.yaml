@@ -1,0 +1,26 @@
+- platform: mqtt
+  state_topic: "home/room3/pir/state"
+  name: "pir sensor @ room3"
+- platform: mqtt
+  state_topic: "home/livingroom/pir/state"
+  name: "pir sensor @ livingroom"
+- platform: mqtt
+  state_topic: "home/entrance/pir/state"
+  name: "pir sensor @ entrance"
+- platform: mqtt
+  state_topic: "home/entrance/lightintensity/value"
+  name: "light sensor @ entrance"
+- platform: yr
+- platform: command_line
+  name: Is Video Running
+  command: "ssh osmc@mediaserver bash /home/osmc/humair/scripts/check_script_running_video_webcam.sh"
+  scan_interval: 5
+- platform: template
+  sensors:
+    presence_all:
+      value_template: "{{ states.media_player.samsung_tv_remote == 'on' or states.sensor.pir_sensor__entrance.state == '1' or states.sensor.pir_sensor__livingroom.state == '1' or states.sensor.pir_sensor__room3.state == '1'}}"
+      entity_id:
+        - sensor.pir_sensor__entrance
+        - sensor.pir_sensor__room3
+        - sensor.pir_sensor__livingroom
+        - media_player.samsung_tv_remote

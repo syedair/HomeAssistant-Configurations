@@ -1,0 +1,96 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 40.9083
+  longitude: -73.8346
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 44
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/New_York
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret http_password
+  ssl_certificate: /etc/letsencrypt/live/humair.duckdns.org/fullchain.pem
+  ssl_key: /etc/letsencrypt/live/humair.duckdns.org/privkey.pem
+  # Uncomment this if you are using SSL or running in Docker etc
+  base_url: humair.duckdns.org
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+media_player:
+  - platform: kodi
+    host: 192.168.2.25
+    port: 8080
+    name: OSMC
+  - platform: samsungtv
+    host: 192.168.2.72 
+    
+    
+# Text to speech
+tts:
+  platform: google
+
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  client_id: home-assistant-1
+  username: !secret mqtt_username
+  password: !secret mqtt_password 
+
+  
+telegram_bot:
+  platform: polling
+  api_key: !secret telegram_key
+  allowed_chat_ids:
+    - !secret telegram_chatID_Humair
+    - !secret telegram_chatID_Tauseef 
+    
+notify:
+  - platform: ios
+  - name: notifyHumair
+    platform: telegram
+    api_key: !secret telegram_key
+    chat_id: !secret telegram_chatID_Humair
+  - name: notifyTauseef
+    platform: telegram
+    api_key: !secret telegram_key
+    chat_id: !secret telegram_chatID_Tauseef
+    
+  
+shell_command:
+  take_snapshot_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh'
+  take_video_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_video_webcam.sh'
+  check_video_webcam: 'ssh osmc@mediaserver bach /home/osmc/humair/scripts/check_script_running_video_webcam.sh'
+
+group: !include groups.yaml
+script: !include scripts.yaml
+sensor: !include sensors.yaml
+automation: !include automations.yaml
+history: !include history.yaml

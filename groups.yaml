@@ -1,0 +1,18 @@
+#################################################################
+## Groups
+#################################################################
+Presence Sensors:
+  entities:
+    - sensor.presence_all
+    - sensor.pir_sensor__entrance
+    - sensor.pir_sensor__livingroom
+    - sensor.pir_sensor__room3
+Lights:
+  entities:
+    - light.color_lamp_1
+    - light.color_lamp_2
+    - light.color_lamp_3
+    - light.full_home
+    - light.living_room
+    - light.office_room
+    - light.white_lamp_1

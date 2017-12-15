@@ -1,0 +1,12 @@
+webcam_snapshot:
+  alias: Take Webcam Snapshots
+  sequence:
+    - service: shell_command.take_snapshot_webcam
+webcam_video:
+  alias: Take Webcam Video
+  sequence:
+    - service: shell_command.take_video_webcam
+check_webcam_video:
+  alias: Check if Webcam Video is running
+  sequence:
+    - service: shell_command.check_video_webcam
