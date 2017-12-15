@@ -13,7 +13,11 @@
 - platform: yr
 - platform: command_line
   name: Is Video Running
-  command: "ssh osmc@mediaserver bash /home/osmc/humair/scripts/check_script_running_video_webcam.sh"
+  command: "ssh osmc@mediaserver bash /home/osmc/humair/scripts/check_video_webcam.sh"
+  scan_interval: 5
+- platform: command_line
+  name: Is Image Ready
+  command: "ssh osmc@mediaserver bash /home/osmc/humair/scripts/check_snapshot_webcam.sh"
   scan_interval: 5
 - platform: template
   sensors:

@@ -86,8 +86,11 @@ notify:
   
 shell_command:
   take_snapshot_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh'
+  check_snapshot_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/check_snapshot_webcam.sh'
+  archive_snapshot_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/archive_snapshot_webcam.sh'
   take_video_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_video_webcam.sh'
-  check_video_webcam: 'ssh osmc@mediaserver bach /home/osmc/humair/scripts/check_script_running_video_webcam.sh'
+  check_video_webcam: 'ssh osmc@mediaserver bach /home/osmc/humair/scripts/check_video_webcam.sh'
+  archive_video_webcam: 'ssh osmc@mediaserver bach /home/osmc/humair/scripts/archive_video_webcam.sh'
 
 group: !include groups.yaml
 script: !include scripts.yaml

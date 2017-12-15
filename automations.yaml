@@ -7,13 +7,14 @@
     platform: event
   action:
   - data:
+      brightness: '255'
+      entity_id: light.color_lamp_2
+    service: light.turn_on
+  - delay: 0:0:5
+  - data:
       entity_id: script.webcam_snapshot
     service: homeassistant.turn_on
-  - alias: ''
-    data:
-      brightness: '255'
-      entity_id: light.white_lamp_1
-    service: light.turn_on
+  - delay: 0:0:5
   - data:
       data:
         photo:
@@ -22,9 +23,10 @@
       message: Living Room Picture
       title: Intruder Alert
     service: notify.notifyhumair
+  - delay: 0:0:5
   - data:
-      entity_id: light.white_lamp_1
-    service: light.turn_off
+      entity_id: script.archive_webcam_snapshot
+    service: homeassistant.turn_on
 - action:
   - data:
       data:
@@ -176,6 +178,9 @@
   - data:
       entity_id: light.color_lamp_2
     service: light.turn_off
+  - data:
+      entity_id: script.archive_webcam_snapshot
+    service: homeassistant.turn_on
   alias: Send Video
   condition: []
   id: '1513267002615'

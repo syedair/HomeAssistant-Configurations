@@ -2,6 +2,14 @@ webcam_snapshot:
   alias: Take Webcam Snapshots
   sequence:
     - service: shell_command.take_snapshot_webcam
+check_webcam_snapshot:
+  alias: Check if Webcam Image is taken
+  sequence:
+    - service: shell_command.check_snapshot_webcam
+archive_webcam_snapshot:
+  alias: Archive once the image is sent
+  sequence:
+    - service: shell_command.archive_snapshot_webcam
 webcam_video:
   alias: Take Webcam Video
   sequence:
@@ -10,3 +18,7 @@ check_webcam_video:
   alias: Check if Webcam Video is running
   sequence:
     - service: shell_command.check_video_webcam
+archive_webcam_video:
+  alias: Archive once the video is sent
+  sequence:
+    - service: shell_command.archive_video_webcam
