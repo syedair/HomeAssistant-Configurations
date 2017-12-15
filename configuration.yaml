@@ -2,10 +2,10 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: Home
   # Location required to calculate the time the sun rises and sets
-  latitude: 40.9083
-  longitude: -73.8346
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
   # Impacts weather/sunrise data (altitude above sea level in meters)
-  elevation: 44
+  elevation: !secret homeassistant_elevation
   # metric for Metric, imperial for Imperial
   unit_system: imperial
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -23,10 +23,10 @@ config:
 http:
   # Uncomment this to add a password (recommended!)
   api_password: !secret http_password
-  ssl_certificate: /etc/letsencrypt/live/humair.duckdns.org/fullchain.pem
-  ssl_key: /etc/letsencrypt/live/humair.duckdns.org/privkey.pem
+  ssl_certificate: !secret ssl_certificate
+  ssl_key: !secret ssl_key
   # Uncomment this if you are using SSL or running in Docker etc
-  base_url: humair.duckdns.org
+  base_url: !secret http_base_url
 
 # Checks for available updates
 updater:
