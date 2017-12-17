@@ -27,6 +27,21 @@
   - data:
       entity_id: script.archive_webcam_snapshot
     service: homeassistant.turn_on
+  - data:
+      entity_id: light.color_lamp_2
+    service: light.turn_off
+- action:
+  - data:
+      brightness: '255'
+      entity_id: light.color_lamp_3
+    service: light.turn_on
+  alias: Presence Detection - Room 3
+  condition: []
+  id: '1513112861399'
+  trigger:
+  - entity_id: sensor.pir_sensor__room3
+    platform: state
+    to: '1'
 - action:
   - data:
       data:
@@ -35,13 +50,9 @@
       message: Movement Detected in Room3
       title: Intruder Alert
     service: notify.notifyhumair
-  - data:
-      brightness: '255'
-      entity_id: light.color_lamp_3
-    service: light.turn_on
-  alias: Presence Detection - Room 3
+  alias: Notification Presence Detection - Room 3
   condition: []
-  id: '1513112861399'
+  id: '1513112862000'
   trigger:
   - entity_id: sensor.pir_sensor__room3
     platform: state
@@ -117,7 +128,7 @@
   - entity_id: sensor.pir_sensor__livingroom
     platform: state
     to: '0'
-- alias: Take Webcam video
+- alias: Telegram Bot - Take Webcam video
   id: '1111111222333'
   trigger:
   - event_data:
@@ -199,3 +210,43 @@
   - entity_id: sensor.presence_all
     platform: state
     to: 'False'
+- action:
+  - data:
+      entity_id: automation.no_presence_detection__room_3
+    service: automation.turn_off
+  - data:
+      entity_id: automation.no_presenece_detection__living_room
+    service: automation.turn_off
+  - data:
+      entity_id: automation.presence_detection__room_3
+    service: automation.turn_off
+  - data:
+      entity_id: automation.presence_detection__living_room
+    service: automation.turn_off
+  alias: Auto Lights Off At Sunrise
+  condition: []
+  id: '1513477054860'
+  trigger:
+  - event: sunrise
+    offset: +00:30
+    platform: sun
+- action:
+  - data:
+      entity_id: automation.no_presence_detection__room_3
+    service: automation.turn_on
+  - data:
+      entity_id: automation.no_presenece_detection__living_room
+    service: automation.turn_on
+  - data:
+      entity_id: automation.presence_detection__room_3
+    service: automation.turn_on
+  - data:
+      entity_id: automation.presence_detection__living_room
+    service: automation.turn_on
+  alias: Auto Lights On At Sunset
+  condition: []
+  id: '1513477054470'
+  trigger:
+  - event: sunset
+    offset: -00:30
+    platform: sun
