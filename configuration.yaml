@@ -23,10 +23,14 @@ config:
 http:
   # Uncomment this to add a password (recommended!)
   api_password: !secret http_password
-  ssl_certificate: !secret ssl_certificate
-  ssl_key: !secret ssl_key
+  #ssl_certificate: !secret ssl_certificate
+  #ssl_key: !secret ssl_key
   # Uncomment this if you are using SSL or running in Docker etc
-  base_url: !secret http_base_url
+  #base_url: !secret http_base_url
+  trusted_networks:
+     - 127.0.0.1
+     - ::1
+     - 192.168.2.0/24
 
 # Checks for available updates
 updater:
@@ -51,11 +55,13 @@ media_player:
     name: OSMC
   - platform: samsungtv
     host: 192.168.2.72 
+  - platform: mpd
+    host: homeserver
     
     
 # Text to speech
 tts:
-  platform: google
+  - platform: google
 
 mqtt:
   broker: 127.0.0.1
@@ -87,10 +93,24 @@ notify:
 shell_command:
   take_snapshot_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh'
   check_snapshot_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/check_snapshot_webcam.sh'
+  copy_snapshot_webcam: 'scp osmc@mediaserver:/var/www/html/image.jpg /tmp/image.jpg'
   archive_snapshot_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/archive_snapshot_webcam.sh'
   take_video_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_video_webcam.sh'
-  check_video_webcam: 'ssh osmc@mediaserver bach /home/osmc/humair/scripts/check_video_webcam.sh'
-  archive_video_webcam: 'ssh osmc@mediaserver bach /home/osmc/humair/scripts/archive_video_webcam.sh'
+  check_video_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/check_video_webcam.sh'
+  archive_video_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/archive_video_webcam.sh'
+
+device_tracker:
+  - platform: owntracks
+
+switch:
+  - platform: mqtt
+    name: alarm
+    command_topic: "home/alarm/state"
+
+#camera:
+#  - platform: local_file
+#    file_path: /tmp/image.jpg
+#    name: Living Room
 
 group: !include groups.yaml
 script: !include scripts.yaml

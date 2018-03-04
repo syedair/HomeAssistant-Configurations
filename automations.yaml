@@ -25,6 +25,10 @@
     service: notify.notifyhumair
   - delay: 0:0:5
   - data:
+      entity_id: script.copy_webcam_snapshot
+    service: homeassistant.turn_on
+  - delay: 0:0:10
+  - data:
       entity_id: script.archive_webcam_snapshot
     service: homeassistant.turn_on
   - data:
@@ -186,11 +190,13 @@
       message: Video of Living Room
       title: Intruder Alert
     service: notify.notifyhumair
+  - delay: 0:0:5
   - data:
       entity_id: light.color_lamp_2
     service: light.turn_off
+  - delay: 0:0:30
   - data:
-      entity_id: script.archive_webcam_snapshot
+      entity_id: script.archive_webcam_video
     service: homeassistant.turn_on
   alias: Send Video
   condition: []
@@ -250,3 +256,30 @@
   - event: sunset
     offset: -00:30
     platform: sun
+- alias: Auto Video Recording
+  id: '3331444222333'
+  trigger:
+  - entity_id: sensor.presence_all
+    platform: state
+    to: 'True'
+  action:
+  - data:
+      entity_id: script.webcam_video
+    service: homeassistant.turn_on
+  - data:
+      message: Video Recording
+      title: Please wait
+    service: notify.notifyhumair
+  - data:
+      brightness: '255'
+      entity_id: light.color_lamp_2
+    service: light.turn_on
+  condition:
+    condition: or
+    conditions:
+      - condition: state
+        entity_id: switch.alarm
+        state: 'on'
+      - condition: state
+        entity_id: sensor.is_video_running
+        state: 'off'

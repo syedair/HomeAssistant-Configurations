@@ -7,6 +7,13 @@ Presence Sensors:
     - sensor.pir_sensor__entrance
     - sensor.pir_sensor__livingroom
     - sensor.pir_sensor__room3
+People:
+  entities:
+    - device_tracker.owntrack_humair
+    - device_tracker.owntrack_tauseef
+Swtiches:
+  entities:
+    - switch.alarm
 Lights:
   entities:
     - light.color_lamp_1
