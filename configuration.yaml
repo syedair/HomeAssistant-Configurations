@@ -63,6 +63,27 @@ media_player:
 tts:
   - platform: google
 
+google_assistant:
+ project_id: !secret google_project_id
+ client_id: !secret google_client_id
+ access_token: !secret google_access_token
+ api_key: !secret google_api_key
+ exposed_domains:
+   - switch
+   - light
+   - group
+ entity_config:
+   switch.kitchen:
+     name: kitchen
+     aliases:
+       - bright lights
+       - entry lights
+     type: light
+   light.living_room:
+     expose: false
+     room: living room
+
+
 mqtt:
   broker: 127.0.0.1
   port: 1883
@@ -116,6 +137,12 @@ camera:
   platform: generic
   still_image_url: https://maps.googleapis.com/maps/api/staticmap?center={{ states.device_tracker.owntrack_humair.attributes.latitude }},{{ states.device_tracker.owntrack_humair.attributes.longitude }}&zoom=13&size=500x500&maptype=roadmap&markers=color:blue%7Clabel:SMH%7C{{ states.device_tracker.owntrack_humair.attributes.latitude }},{{ states.device_tracker.owntrack_humair.attributes.longitude }}
   limit_refetch_to_url_change: true
+
+#Xiomi Gateway
+xiaomi_aqara:
+  gateways:
+    - mac: !secret xiomi_gw_mac
+      key: !secret xiomi_gw_key
 
 group: !include groups.yaml
 script: !include scripts.yaml
