@@ -1,297 +1,108 @@
-- alias: Telegram Bot - Take Webcam Snapshots
-  id: '1'
-  trigger:
-  - event_data:
-      command: /picture
-    event_type: telegram_command
-    platform: event
-  action:
-  - data:
-      brightness: '255'
-      entity_id: light.color_lamp_2
-    service: light.turn_on
-  - delay: 0:0:5
-  - data:
-      entity_id: script.webcam_snapshot
-    service: homeassistant.turn_on
-  - delay: 0:0:5
-  - data:
-      data:
-        photo:
-        - caption: Living Room Picture
-          url: http://mediaserver/image.jpg
-      message: Living Room Picture
-      title: Intruder Alert
-    service: notify.notifyhumair
-  - delay: 0:0:5
-  - data:
-      entity_id: script.copy_webcam_snapshot
-    service: homeassistant.turn_on
-  - delay: 0:0:10
-  - data:
-      entity_id: script.archive_webcam_snapshot
-    service: homeassistant.turn_on
-  - data:
-      entity_id: light.color_lamp_2
-    service: light.turn_off
 - action:
   - data:
-      brightness: '255'
-      entity_id: light.color_lamp_3
-    service: light.turn_on
-  alias: Presence Detection - Room 3
-  condition: []
-  id: '1513112861399'
-  trigger:
-  - entity_id: sensor.pir_sensor__room3
-    platform: state
-    to: '1'
-- action:
+      gw_mac: 78:11:DC:DC:2B:AE
+      ringtone_id: 11
+      ringtone_vol: 5
+    service: xiaomi_aqara.play_ringtone
   - data:
       data:
         keyboard:
         - /picture, /video
-      message: Movement Detected in Room3
-      title: Intruder Alert
-    service: notify.notifyhumair
-  alias: Notification Presence Detection - Room 3
-  condition: []
-  id: '1513112862000'
-  trigger:
-  - entity_id: sensor.pir_sensor__room3
-    platform: state
-    to: '1'
-- id: '4007'
-  alias: Telegram Bot - Welcom Message
-  hide_entity: true
-  trigger:
-  - platform: event
-    event_type: telegram_command
-    event_data:
-      command: /start
-  action:
-  - service: notify.notifyhumair
-    data_template:
-      title: Welcome to Zeda
-      message: What shall we do today?
-      data:
-        keyboard:
-        - /picture, /video
-- action:
-  - data:
-      brightness: '255'
-      entity_id: light.color_lamp_1
-    service: light.turn_on
-  - data:
-      brightness: '255'
-      entity_id: light.color_lamp_2
-    service: light.turn_on
-  - data:
-      brightness: '255'
-      entity_id: light.white_lamp_1
-    service: light.turn_on
-  alias: Presence Detection - Living Room
-  condition: []
-  id: '1513168004359'
-  trigger:
-  - entity_id: sensor.pir_sensor__livingroom
-    platform: state
-    to: '1'
-- action:
-  - data:
-      data:
-        keyboard:
-        - /picture, /video
-      message: Movement Detected in Living Room
+      message: Main Entrance Door Opened
       title: Intruder Alert
     service: notify.notifyhumair
   - data:
       entity_id: script.webcam_snapshot
     service: homeassistant.turn_on
-  alias: Notification Presence Detection - Living Room
-  condition: []
-  id: '1513193210740'
-  trigger:
-  - entity_id: sensor.pir_sensor__livingroom
-    platform: state
-    to: '1'
-- action:
-  - data:
-      entity_id: light.color_lamp_1
-    service: light.turn_off
-  - data:
-      entity_id: light.color_lamp_2
-    service: light.turn_off
-  - data:
-      entity_id: light.white_lamp_1
-    service: light.turn_off
-  alias: No Presenece Detection - Living Room
-  condition: []
-  id: '1513193442182'
-  trigger:
-  - entity_id: sensor.pir_sensor__livingroom
-    platform: state
-    to: '0'
-- alias: Telegram Bot - Take Webcam video
-  id: '1111111222333'
-  trigger:
-  - event_data:
-      command: /video
-    event_type: telegram_command
-    platform: event
-  action:
-  - data:
-      entity_id: script.webcam_video
-    service: homeassistant.turn_on
-  - data:
-      message: Video Recording
-      title: Please wait
-    service: notify.notifyhumair
-  - data:
-      brightness: '255'
-      entity_id: light.color_lamp_2
-    service: light.turn_on
-  condition:
-  - condition: state
-    entity_id: sensor.is_video_running
-    state: 'off'
-- action:
-  - data:
-      data:
-        keyboard:
-        - /picture, /video
-      message: Movement Detected on Entrance
-      title: Intruder Alert
-    service: notify.notifyhumair
   alias: Notification Presence Detection - Entrance
   condition: []
-  id: '8888193210740'
+  id: '6'
   trigger:
-  - entity_id: sensor.pir_sensor__entrance
+  - entity_id: binary_sensor.door_window_sensor_158d0002278850
+    from: 'off'
     platform: state
-    to: '1'
-- action:
-  - data:
-      entity_id: light.color_lamp_3
-    service: light.turn_off
-  alias: No Presence Detection - Room 3
-  condition: []
-  id: '1513251327721'
-  trigger:
-  - entity_id: sensor.pir_sensor__room3
-    platform: state
-    to: '0'
-- action:
-  - data:
-      data:
-        video:
-        - caption: video of living room
-          url: http://mediaserver/video.mp4
-      message: Video of Living Room
-      title: Intruder Alert
-    service: notify.notifyhumair
-  - delay: 0:0:5
-  - data:
-      entity_id: light.color_lamp_2
-    service: light.turn_off
-  - delay: 0:0:30
-  - data:
-      entity_id: script.archive_webcam_video
-    service: homeassistant.turn_on
-  alias: Send Video
-  condition: []
-  id: '1513267002615'
-  trigger:
-  - entity_id: sensor.is_video_running
-    platform: state
-    to: 'off'
-- action:
-  - data:
-      entity_id: group.all_lights
-    service: light.turn_off
-  alias: If All Away
-  condition: []
-  id: '1513267551615'
-  trigger:
-  - entity_id: sensor.presence_all
-    platform: state
-    to: 'False'
-- action:
-  - data:
-      entity_id: automation.no_presence_detection__room_3
-    service: automation.turn_off
-  - data:
-      entity_id: automation.no_presenece_detection__living_room
-    service: automation.turn_off
-  - data:
-      entity_id: automation.presence_detection__room_3
-    service: automation.turn_off
-  - data:
-      entity_id: automation.presence_detection__living_room
-    service: automation.turn_off
+    to: 'on'
+- action: []
   alias: Auto Lights Off At Sunrise
   condition: []
-  id: '1513477054860'
+  id: '13'
   trigger:
   - event: sunrise
     offset: +00:30
     platform: sun
-- action:
-  - data:
-      entity_id: automation.no_presence_detection__room_3
-    service: automation.turn_on
-  - data:
-      entity_id: automation.no_presenece_detection__living_room
-    service: automation.turn_on
-  - data:
-      entity_id: automation.presence_detection__room_3
-    service: automation.turn_on
-  - data:
-      entity_id: automation.presence_detection__living_room
-    service: automation.turn_on
+- action: []
   alias: Auto Lights On At Sunset
   condition: []
-  id: '1513477054470'
+  id: '14'
   trigger:
   - event: sunset
     offset: -00:30
     platform: sun
-- alias: Auto Video Recording
-  id: '3331444222333'
+- alias: Single Click to toggle living room lights
+  id: '16'
   trigger:
-  - entity_id: sensor.presence_all
-    platform: state
-    to: 'True'
-  action:
-  - data:
-      entity_id: script.webcam_video
-    service: homeassistant.turn_on
-  - data:
-      message: Video Recording
-      title: Please wait
-    service: notify.notifyhumair
-  - data:
-      brightness: '255'
-      entity_id: light.color_lamp_2
-    service: light.turn_on
-  condition:
-    condition: or
-    conditions:
-      - condition: state
-        entity_id: switch.alarm
-        state: 'on'
-      - condition: state
-        entity_id: sensor.is_video_running
-        state: 'off'
-- alias: Double Click to toggle living room lamp
-  id: '333144445422344'
-  trigger:
-    platform: event
+  - event_data:
+      click_type: single
+      entity_id: binary_sensor.switch_158d0001243b98
     event_type: click
-    event_data:
-     entity_id: binary_sensor.switch_158d0001243b98
-     click_type: double
+    platform: event
   action:
+  - data:
+      entity_id: light.color_lamp_1
     service: light.toggle
+  - data:
+      entity_id: light.color_lamp_2
+    service: light.toggle
+  - data:
+      entity_id: light.white_lamp_1
+    service: light.toggle
+- alias: If there is motion and its dark turn on the gateway light
+  id: '17'
+  trigger:
+  - entity_id: binary_sensor.motion_sensor_158d0001f46e9e
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+  - below: '300'
+    condition: numeric_state
+    entity_id: sensor.illumination_7811dcdc2bae
+  - after: '22:00'
+    before: 06:00
+    condition: time
+  action:
+  - data:
+      brightness: 5
+    entity_id: light.gateway_light_7811dcdc2bae
+    service: light.turn_on
+  - data:
+      entity_id: automation.MOTION_OFF
+    service: automation.turn_on
+- alias: If there no motion for 5 minutes turn off the gateway light
+  id: '18'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.motion_sensor_158d0001f46e9e
+    from: 'on'
+    to: 'off'
+    for:
+      minutes: 5
+  action:
+  - service: light.turn_off
+    entity_id: light.gateway_light_7811dcdc2bae
+  - service: automation.turn_off
     data:
-     entity_id: light.color_lamp_1
+      entity_id: automation.Motion_off
+- action:
+  - data:
+      entity_id: light.color_lamp_3
+    service: light.toggle
+  alias: Double Click to toggle bedroom light
+  condition: []
+  id: '1523705703675'
+  trigger:
+  - event_data:
+      click_type: double
+      entity_id: binary_sensor.switch_158d0001243b98
+    event_type: click
+    platform: event

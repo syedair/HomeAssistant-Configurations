@@ -4,11 +4,11 @@
 Presence Sensors:
   entities:
     - sensor.presence_all
-    - sensor.pir_sensor__entrance
-    - sensor.pir_sensor__livingroom
-    - sensor.pir_sensor__room3
     - binary_sensor.motion_sensor_158d0001f46e9e
     - binary_sensor.door_window_sensor_158d0002278850
+Sensors:
+  entities:
+    - sensor.illumination_7811dcdc2bae
 People:
   entities:
     - device_tracker.owntrack_humair
@@ -26,3 +26,4 @@ Lights:
     - light.living_room
     - light.office_room
     - light.white_lamp_1
+    - light.gateway_light_7811dcdc2bae
