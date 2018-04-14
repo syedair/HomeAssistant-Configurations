@@ -7,6 +7,8 @@ Presence Sensors:
     - sensor.pir_sensor__entrance
     - sensor.pir_sensor__livingroom
     - sensor.pir_sensor__room3
+    - binary_sensor.motion_sensor_158d0001f46e9e
+    - binary_sensor.door_window_sensor_158d0002278850
 People:
   entities:
     - device_tracker.owntrack_humair
@@ -14,6 +16,7 @@ People:
 Swtiches:
   entities:
     - switch.alarm
+    - binary_sensor.switch_158d0001243b98
 Lights:
   entities:
     - light.color_lamp_1
