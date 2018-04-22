@@ -151,6 +151,26 @@ hue:
       allow_unreachable: true
       allow_hue_groups: true
 
+alexa:
+
+intent_script:
+  ActivateSceneIntent:
+    action:
+      service: scene.turn_on
+      data_template:
+        entity_id: scene.{{ Scene | replace(" ", "_") }}
+    speech:
+      type: plain
+      text: OK
+  RunScriptIntent:
+    action:
+      service: script.turn_on
+      data_template:
+        entity_id: script.{{ Script | replace(" ", "_") }}
+    speech:
+      type: plain
+      text: OK
+
 group: !include groups.yaml
 script: !include scripts.yaml
 sensor: !include sensors.yaml

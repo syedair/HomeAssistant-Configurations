@@ -22,3 +22,13 @@ archive_webcam_video:
   alias: Archive once the video is sent
   sequence:
     - service: shell_command.archive_video_webcam
+message:
+  alias: morning lights
+  sequence:
+    - data:
+        data:
+          keyboard:
+          - /picture, /video
+        message: Main Entrance Door Opened
+        title: Intruder Alert
+      service: notify.notifyhumair
