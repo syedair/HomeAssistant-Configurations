@@ -127,3 +127,11 @@
   trigger:
   - event: sunrise
     platform: sun
+- action:
+  - service: ifttt.trigger
+    data: {"event":"TestHA_trigger","value1":"Hello World!"}
+  alias: Startup Notification
+  id: '99999'
+  trigger:
+    platform: homeassistant
+    event: start

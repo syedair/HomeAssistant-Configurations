@@ -12,6 +12,12 @@ homeassistant:
   time_zone: America/New_York
   customize: !include customize.yaml
 
+logger:
+  default: info
+  logs:
+    homeassistant.components.alexa: debug
+    homeassistant.components.camera: critical
+
 # Show links to resources in log and frontend
 #introduction:
 
@@ -51,14 +57,11 @@ sun:
 
 media_player:
   - platform: kodi
-    host: 192.168.2.25
+    host: mediaserver
     port: 8080
     name: OSMC
   - platform: samsungtv
     host: 192.168.2.72 
-  - platform: mpd
-    host: homeserver
-    
     
 # Text to speech
 tts:
@@ -111,6 +114,8 @@ notify:
     api_key: !secret telegram_key
     chat_id: !secret telegram_chatID_Tauseef
     
+ifttt:
+  key: !secret ifttt_key
   
 shell_command:
   take_snapshot_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh'
@@ -152,7 +157,6 @@ hue:
       allow_hue_groups: true
 
 alexa:
-
 intent_script:
   ActivateSceneIntent:
     action:
