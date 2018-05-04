@@ -14,9 +14,8 @@ homeassistant:
 
 logger:
   default: info
-  logs:
-    homeassistant.components.alexa: debug
-    homeassistant.components.camera: critical
+#  logs:
+#    #homeassistant.components.xiaomi_aqara: debug
 
 # Show links to resources in log and frontend
 #introduction:
@@ -67,15 +66,15 @@ media_player:
 tts:
   - platform: google
 
-#google_assistant:
-# project_id: !secret google_project_id
-# client_id: !secret google_client_id
-# access_token: !secret google_access_token
-# api_key: !secret google_api_key
-# exposed_domains:
-#   - switch
-#   - light
-#   - group
+# google_assistant:
+ # project_id: !secret google_project_id
+ # client_id: !secret google_client_id
+ # access_token: !secret google_access_token
+ # api_key: !secret google_api_key
+ # exposed_domains:
+   # - switch
+   # - light
+   # - group
 # entity_config:
 #   switch.kitchen:
 #     name: kitchen
@@ -133,6 +132,9 @@ switch:
   - platform: mqtt
     name: alarm
     command_topic: "home/alarm/state"
+  - platform: mqtt
+    name: home_presence
+    command_topic: "home/presence/family"
 
 #camera:
 #  - platform: local_file
@@ -149,6 +151,7 @@ xiaomi_aqara:
   gateways:
     - mac: !secret xiomi_gw_mac
       key: !secret xiomi_gw_key
+      host: !secret xiomi_gw_ip
 
 hue:
   bridges:
@@ -156,25 +159,25 @@ hue:
       allow_unreachable: true
       allow_hue_groups: true
 
-alexa:
-intent_script:
-  ActivateSceneIntent:
-    action:
-      service: scene.turn_on
-      data_template:
-        entity_id: scene.{{ Scene | replace(" ", "_") }}
-    speech:
-      type: plain
-      text: OK
-  RunScriptIntent:
-    action:
-      service: script.turn_on
-      data_template:
-        entity_id: script.{{ Script | replace(" ", "_") }}
-    speech:
-      type: plain
-      text: OK
-
+# alexa:
+# intent_script:
+  # ActivateSceneIntent:
+    # action:
+      # service: scene.turn_on
+      # data_template:
+        # entity_id: scene.{{ Scene | replace(" ", "_") }}
+    # speech:
+      # type: plain
+      # text: OK
+  # RunScriptIntent:
+    # action:
+      # service: script.turn_on
+      # data_template:
+        # entity_id: script.{{ Script | replace(" ", "_") }}
+    # speech:
+      # type: plain
+      # text: OK
+cloud: !include cloud.yaml
 group: !include groups.yaml
 script: !include scripts.yaml
 sensor: !include sensors.yaml

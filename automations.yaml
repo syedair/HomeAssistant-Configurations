@@ -67,9 +67,6 @@
   - below: '300'
     condition: numeric_state
     entity_id: sensor.illumination_7811dcdc2bae
-  - after: '22:00'
-    before: 06:00
-    condition: time
   action:
   - data:
       brightness: 5
@@ -129,7 +126,9 @@
     platform: sun
 - action:
   - service: ifttt.trigger
-    data: {"event":"TestHA_trigger","value1":"Hello World!"}
+    data:
+      event: TestHA_trigger
+      value1: Hello World!
   alias: Startup Notification
   id: '99999'
   trigger:
