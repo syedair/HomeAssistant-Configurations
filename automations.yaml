@@ -134,3 +134,15 @@
   trigger:
     platform: homeassistant
     event: start
+- action:
+  - service: ifttt.trigger
+    data:
+      event: Xiaomi_Unavailable
+      value1: Xiaomi is unavailable
+  alias: Notify when Xiaomi Unavailable
+  condition: []
+  id: '1525613592545'
+  trigger:
+  - entity_id: light.gateway_light_7811dcdc2bae
+    platform: state
+    to: unavailable

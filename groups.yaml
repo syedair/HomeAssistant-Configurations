@@ -17,6 +17,12 @@ Swtiches:
   entities:
     - switch.alarm
     - binary_sensor.switch_158d0001243b98
+    
+Battery Level:
+  entities:
+    - sensor.main_door_sensor_bat
+    - sensor.motion_sensor_1_bat
+    - sensor.button_1_bat
 Lights:
   entities:
     - light.color_lamp_1
