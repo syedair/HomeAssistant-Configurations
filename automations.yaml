@@ -1,8 +1,8 @@
 - action:
   - data:
       gw_mac: 78:11:DC:DC:2B:AE
-      ringtone_id: 11
-      ringtone_vol: 8
+      ringtone_id: 10
+      ringtone_vol: 10
     service: xiaomi_aqara.play_ringtone
   - data:
       data:
