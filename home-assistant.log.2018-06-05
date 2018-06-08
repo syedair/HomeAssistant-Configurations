@@ -1,0 +1,122 @@
+2018-06-05 00:30:58 ERROR (Thread-12) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 00:30:58 ERROR (Thread-12) [xiaomi_gateway] No data in response from hub None
+2018-06-05 00:35:37 ERROR (Thread-16) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 00:35:37 ERROR (Thread-16) [xiaomi_gateway] No data in response from hub None
+2018-06-05 01:35:01 ERROR (Thread-21) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 01:35:01 ERROR (Thread-21) [xiaomi_gateway] No data in response from hub None
+2018-06-05 02:12:44 ERROR (Thread-15) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 02:12:44 ERROR (Thread-15) [xiaomi_gateway] No data in response from hub None
+2018-06-05 02:41:29 ERROR (MainThread) [homeassistant.components.light.hue] Unable to reach bridge 192.168.2.52
+2018-06-05 06:26:55 ERROR (Thread-19) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 06:26:55 ERROR (Thread-19) [xiaomi_gateway] No data in response from hub None
+2018-06-05 08:10:14 ERROR (Thread-10) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 08:10:14 ERROR (Thread-10) [xiaomi_gateway] No data in response from hub None
+2018-06-05 08:46:55 ERROR (Thread-16) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 08:46:55 ERROR (Thread-16) [xiaomi_gateway] No data in response from hub None
+2018-06-05 08:51:34 ERROR (Thread-18) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 08:51:34 ERROR (Thread-18) [xiaomi_gateway] No data in response from hub None
+2018-06-05 13:04:09 ERROR (Thread-10) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 13:04:09 ERROR (Thread-10) [xiaomi_gateway] No data in response from hub None
+2018-06-05 13:18:36 ERROR (Thread-13) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 13:18:36 ERROR (Thread-13) [xiaomi_gateway] No data in response from hub None
+2018-06-05 15:45:51 ERROR (Thread-13) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 15:45:51 ERROR (Thread-13) [xiaomi_gateway] No data in response from hub None
+2018-06-05 15:46:01 ERROR (Thread-17) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 15:46:01 ERROR (Thread-17) [xiaomi_gateway] No data in response from hub None
+2018-06-05 15:46:08 ERROR (MainThread) [homeassistant.components.light.hue] Unable to reach bridge 192.168.2.52
+2018-06-05 15:46:22 ERROR (Thread-16) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 15:46:22 ERROR (Thread-16) [xiaomi_gateway] No data in response from hub None
+2018-06-05 15:46:27 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-05 15:46:32 ERROR (Thread-18) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 15:46:32 ERROR (Thread-18) [xiaomi_gateway] No data in response from hub None
+2018-06-05 15:46:53 ERROR (Thread-22) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 15:46:53 ERROR (Thread-22) [xiaomi_gateway] No data in response from hub None
+2018-06-05 15:46:57 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-05 15:47:03 ERROR (Thread-19) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 15:47:03 ERROR (Thread-19) [xiaomi_gateway] No data in response from hub None
+2018-06-05 15:47:24 ERROR (Thread-10) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 15:47:24 ERROR (Thread-10) [xiaomi_gateway] No data in response from hub None
+2018-06-05 15:47:27 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-05 15:47:34 ERROR (Thread-20) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 15:47:34 ERROR (Thread-20) [xiaomi_gateway] No data in response from hub None
+2018-06-05 15:47:55 ERROR (Thread-19) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 15:47:55 ERROR (Thread-19) [xiaomi_gateway] No data in response from hub None
+2018-06-05 15:47:57 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-05 15:48:05 ERROR (Thread-6) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 15:48:05 ERROR (Thread-6) [xiaomi_gateway] No data in response from hub None
+2018-06-05 15:48:26 ERROR (Thread-20) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 15:48:26 ERROR (Thread-20) [xiaomi_gateway] No data in response from hub None
+2018-06-05 15:48:27 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-05 15:48:36 ERROR (Thread-22) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 15:48:36 ERROR (Thread-22) [xiaomi_gateway] No data in response from hub None
+2018-06-05 15:48:47 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d0001bf4ca9 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-05 15:48:47 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d000200a8cd fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-05 15:48:47 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-05 15:49:11 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] wrong status 409
+2018-06-05 17:39:49 ERROR (MainThread) [homeassistant.components.sensor.template] Could not render template Xiaomi Button 1: UndefinedError: 'mappingproxy object' has no attribute 'battery_level'
+2018-06-05 17:41:05 ERROR (MainThread) [homeassistant.components.sensor.template] Could not render template Xiaomi Basement Motion Sensor: UndefinedError: 'mappingproxy object' has no attribute 'battery_level'
+2018-06-05 17:41:56 ERROR (MainThread) [homeassistant.components.sensor.template] Could not render template Xiaomi Garage Motion Sensor: UndefinedError: 'mappingproxy object' has no attribute 'battery_level'
+2018-06-05 17:55:12 ERROR (MainThread) [homeassistant.components.sensor.template] Could not render template Xiaomi Entrance Motion Sensor: UndefinedError: 'mappingproxy object' has no attribute 'battery_level'
+2018-06-05 18:05:19 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh pi@homeserver sudo systemctl restart home-assistant@homeassistant`, return code: -15
+NoneType: None
+2018-06-05 18:23:47 ERROR (Thread-3) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 18:23:47 ERROR (Thread-3) [xiaomi_gateway] No data in response from hub None
+2018-06-05 19:39:42 ERROR (Thread-14) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 19:39:42 ERROR (Thread-14) [xiaomi_gateway] No data in response from hub None
+2018-06-05 19:40:13 ERROR (Thread-4) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 19:40:13 ERROR (Thread-4) [xiaomi_gateway] No data in response from hub None
+2018-06-05 19:40:34 ERROR (MainThread) [homeassistant.components.light.hue] Unable to reach bridge 192.168.2.52
+2018-06-05 19:40:44 ERROR (Thread-19) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 19:40:44 ERROR (Thread-19) [xiaomi_gateway] No data in response from hub None
+2018-06-05 19:41:46 ERROR (Thread-19) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 19:41:46 ERROR (Thread-19) [xiaomi_gateway] No data in response from hub None
+2018-06-05 19:43:19 ERROR (Thread-5) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 19:43:19 ERROR (Thread-5) [xiaomi_gateway] No data in response from hub None
+2018-06-05 19:43:50 ERROR (Thread-9) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 19:43:50 ERROR (Thread-9) [xiaomi_gateway] No data in response from hub None
+2018-06-05 19:44:00 ERROR (Thread-3) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 19:44:00 ERROR (Thread-3) [xiaomi_gateway] No data in response from hub None
+2018-06-05 19:45:23 ERROR (Thread-7) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 19:45:23 ERROR (Thread-7) [xiaomi_gateway] No data in response from hub None
+2018-06-05 23:30:05 ERROR (Thread-2) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 23:30:05 ERROR (Thread-2) [xiaomi_gateway] No data in response from hub None

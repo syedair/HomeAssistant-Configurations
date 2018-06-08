@@ -13,7 +13,7 @@ homeassistant:
   customize: !include customize.yaml
 
 logger:
-  default: info
+  default: error
 #  logs:
 #    #homeassistant.components.xiaomi_aqara: debug
 
@@ -33,10 +33,10 @@ http:
   #ssl_key: !secret ssl_key
   # Uncomment this if you are using SSL or running in Docker etc
   #base_url: !secret http_base_url
-  trusted_networks:
-     - 127.0.0.1
-     - ::1
-     - 192.168.2.0/24
+#  trusted_networks:
+#     - 127.0.0.1
+#     - ::1
+#     - 192.168.2.0/24
 
 # Checks for available updates
 updater:
@@ -61,20 +61,23 @@ media_player:
     name: OSMC
   - platform: samsungtv
     host: 192.168.2.72 
+    name: Samsung TV
     
 # Text to speech
 tts:
   - platform: google
 
-# google_assistant:
- # project_id: !secret google_project_id
- # client_id: !secret google_client_id
- # access_token: !secret google_access_token
- # api_key: !secret google_api_key
- # exposed_domains:
-   # - switch
-   # - light
-   # - group
+google_assistant:
+ project_id: !secret google_project_id
+ client_id: !secret google_client_id
+ access_token: !secret google_access_token
+ api_key: !secret google_api_key
+ exposed_domains:
+   - switch
+   - light
+   - group
+   - media_player
+   - climate
 # entity_config:
 #   switch.kitchen:
 #     name: kitchen
@@ -124,6 +127,7 @@ shell_command:
   take_video_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_video_webcam.sh'
   check_video_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/check_video_webcam.sh'
   archive_video_webcam: 'ssh osmc@mediaserver bash /home/osmc/humair/scripts/archive_video_webcam.sh'
+  restart_homeassistant: 'ssh pi@homeserver sudo systemctl restart home-assistant@homeassistant'
 
 device_tracker:
   - platform: owntracks

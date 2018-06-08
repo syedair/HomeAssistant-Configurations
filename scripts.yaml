@@ -22,6 +22,10 @@ archive_webcam_video:
   alias: Archive once the video is sent
   sequence:
     - service: shell_command.archive_video_webcam
+restart_homeassistant:
+  alias: Restart Home Assistant
+  sequence:
+    - service: shell_command.restart_homeassistant
 test_script:
   alias: test script
   sequence:

@@ -1,4 +1,11 @@
-- action:
+- id: '6'
+  alias: Notification Presence Detection - Entrance
+  trigger:
+  - entity_id: binary_sensor.door_window_sensor_158d0002278850
+    platform: state
+    to: 'on'
+  condition: []
+  action:
   - data:
       gw_mac: 78:11:DC:DC:2B:AE
       ringtone_id: 10
@@ -14,14 +21,6 @@
   - data:
       entity_id: script.webcam_snapshot
     service: homeassistant.turn_on
-  alias: Notification Presence Detection - Entrance
-  condition: []
-  id: '6'
-  trigger:
-  - entity_id: binary_sensor.door_window_sensor_158d0002278850
-    from: 'off'
-    platform: state
-    to: 'on'
 - action: []
   alias: Auto Lights Off At Sunrise
   condition: []
@@ -146,3 +145,15 @@
   - entity_id: light.gateway_light_7811dcdc2bae
     platform: state
     to: unavailable
+- id: '1526853874400'
+  alias: Notify when Xiaomi Available
+  trigger:
+  - entity_id: light.gateway_light_7811dcdc2bae
+    platform: state
+    to: available
+  condition: []
+  action:
+  - data:
+      event: Xiaomi_Available
+      value1: Xiaomi is Available now
+    service: ifttt.trigger

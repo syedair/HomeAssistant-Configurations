@@ -42,3 +42,27 @@ light.color_lamp_2:
   name:
   platform: hue
   unique_id: 00:17:88:01:02:55:5f:72-0b
+binary_sensor.door_window_sensor_158d000200a8cd:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d000200a8cd
+binary_sensor.door_window_sensor_158d0001bf4ca9:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001bf4ca9
+binary_sensor.motion_sensor_158d0001a9235d:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001a9235d
+binary_sensor.motion_sensor_158d0001aeb665:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001aeb665
+sensor.iphone_battery_state:
+  name:
+  platform: ios
+  unique_id: state_iphone
+sensor.iphone_battery_level:
+  name:
+  platform: ios
+  unique_id: level_iphone

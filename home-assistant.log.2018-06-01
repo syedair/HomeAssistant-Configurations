@@ -1,0 +1,24 @@
+2018-06-01 03:23:11 ERROR (Thread-20) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-01 03:23:11 ERROR (Thread-20) [xiaomi_gateway] No data in response from hub None
+2018-06-01 04:09:29 ERROR (Thread-19) [xiaomi_gateway] Non matching response. Expecting read_ack, but got write_ack
+2018-06-01 04:09:29 ERROR (Thread-19) [xiaomi_gateway] No data in response from hub None
+2018-06-01 04:09:29 ERROR (Thread-17) [xiaomi_gateway] Non matching response. Expecting write_ack, but got read_ack
+2018-06-01 04:09:29 ERROR (Thread-17) [xiaomi_gateway] No data in response from hub None
+2018-06-01 08:42:24 ERROR (Thread-13) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-01 08:42:24 ERROR (Thread-13) [xiaomi_gateway] No data in response from hub None
+2018-06-01 11:13:45 ERROR (Thread-9) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-01 11:13:45 ERROR (Thread-9) [xiaomi_gateway] No data in response from hub None
+2018-06-01 15:50:40 ERROR (Thread-17) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-01 15:50:40 ERROR (Thread-17) [xiaomi_gateway] No data in response from hub None
+2018-06-01 17:36:34 ERROR (Thread-21) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-01 17:36:34 ERROR (Thread-21) [xiaomi_gateway] No data in response from hub None
+2018-06-01 18:25:39 ERROR (Thread-15) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-01 18:25:39 ERROR (Thread-15) [xiaomi_gateway] No data in response from hub None
+2018-06-01 20:08:25 ERROR (Thread-21) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-01 20:08:25 ERROR (Thread-21) [xiaomi_gateway] No data in response from hub None
+2018-06-01 20:21:16 ERROR (Thread-10) [xiaomi_gateway] Non matching response. Expecting read_ack, but got write_ack
+2018-06-01 20:21:16 ERROR (Thread-10) [xiaomi_gateway] No data in response from hub None
+2018-06-01 20:21:16 ERROR (Thread-19) [xiaomi_gateway] Non matching response. Expecting write_ack, but got read_ack
+2018-06-01 20:21:16 ERROR (Thread-19) [xiaomi_gateway] No data in response from hub None
+2018-06-01 20:21:26 ERROR (Thread-13) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-01 20:21:26 ERROR (Thread-13) [xiaomi_gateway] No data in response from hub None
