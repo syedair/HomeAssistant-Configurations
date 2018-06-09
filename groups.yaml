@@ -4,13 +4,16 @@
 Presence Sensors:
   entities:
     - sensor.presence_all
-    - switch.home_presence
     - binary_sensor.motion_sensor_158d0001f46e9e
     - binary_sensor.motion_sensor_158d0001a9235d
     - binary_sensor.motion_sensor_158d0001aeb665
     - binary_sensor.door_window_sensor_158d0001bf4ca9
     - binary_sensor.door_window_sensor_158d000200a8cd
     - binary_sensor.door_window_sensor_158d0002278850
+People:
+  entities:
+    - sensor.humair_presence
+    - sensor.tauseef_presence
 Sensors:
   entities:
     - sensor.illumination_7811dcdc2bae

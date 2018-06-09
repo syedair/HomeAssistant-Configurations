@@ -23,21 +23,19 @@ light.gateway_light_7811dcdc2bae:
   friendly_name: Xiaomi Gateway Light Ring
 sensor.illumination_7811dcdc2bae:
   friendly_name: Xiomi Light Sensor
+sensor.humair_presence:
+  friendly_name: Humair
+sensor.tauseef_presence:
+  friendly_name: Tauseef
 device_tracker.openhab_tauseef:
   hidden: true
 device_tracker.openhab_humair:
   hidden: true
-sensor.presence_all:
+switch.home_presence:
   icon: mdi:home
   friendly_name: Home Occupancy 
   device_class: presence
   assumed_state: false
-sensor.humair_presence:
-  entity_picture: /local/humair.jpg
-  friendly_name: Humair
-sensor.tauseef_presence:
-  entity_picture: /local/tauseef.jpg
-  friendly_name: Tauseef 
 switch.alarm:
   icon: mdi:alarm-light
   friendly_name: Home Alarm

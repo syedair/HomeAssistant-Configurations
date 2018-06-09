@@ -1,0 +1,582 @@
+2018-06-08 08:10:05 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: 255
+NoneType: None
+2018-06-08 08:30:31 ERROR (Thread-16) [homeassistant.components.telegram_bot] Error sending message: Timed out. Args: (397866834, 'Intruder Alert\nMain Entrance Door Opened'), kwargs: {'reply_to_message_id': None, 'disable_web_page_preview': None, 'parse_mode': 'Markdown', 'timeout': None, 'disable_notification': False, 'reply_markup': <telegram.replykeyboardmarkup.ReplyKeyboardMarkup object at 0x63f40e90>}
+2018-06-08 11:32:47 ERROR (Thread-14) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 11:32:47 ERROR (Thread-14) [xiaomi_gateway] No data in response from hub None
+2018-06-08 11:39:30 ERROR (Thread-16) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 11:39:30 ERROR (Thread-16) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:37:15 ERROR (MainThread) [homeassistant.components.light.hue] Unable to reach bridge 192.168.2.52
+2018-06-08 12:37:20 ERROR (Thread-18) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:37:20 ERROR (Thread-18) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:37:30 ERROR (Thread-16) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:37:30 ERROR (Thread-16) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:37:45 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:37:51 ERROR (Thread-12) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:37:51 ERROR (Thread-12) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:38:01 ERROR (Thread-21) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:38:01 ERROR (Thread-21) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:38:15 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:38:22 ERROR (Thread-3) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:38:22 ERROR (Thread-3) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:38:32 ERROR (Thread-7) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:38:32 ERROR (Thread-7) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:38:46 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:38:53 ERROR (Thread-18) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:38:53 ERROR (Thread-18) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:39:03 ERROR (Thread-6) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:39:03 ERROR (Thread-6) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:39:16 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:39:24 ERROR (Thread-12) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:39:24 ERROR (Thread-12) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:39:34 ERROR (Thread-7) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:39:34 ERROR (Thread-7) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:39:36 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:39:50 ERROR (MainThread) [homeassistant.components.light.hue] Unable to reach bridge 192.168.2.52
+2018-06-08 12:48:05 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:48:06 ERROR (MainThread) [homeassistant.components.light.hue] Unable to reach bridge 192.168.2.52
+2018-06-08 12:48:11 ERROR (Thread-21) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:48:11 ERROR (Thread-21) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:48:21 ERROR (Thread-2) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:48:21 ERROR (Thread-2) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:48:35 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:48:37 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-06-08 12:48:42 ERROR (Thread-6) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:48:42 ERROR (Thread-6) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:48:52 ERROR (Thread-10) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:48:52 ERROR (Thread-10) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:49:07 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:49:12 ERROR (Thread-14) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:49:12 ERROR (Thread-14) [xiaomi_gateway] No data in response from hub None
+2018-06-08 12:49:12 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d0001bf4ca9 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 12:49:17 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:49:27 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:49:33 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d000200a8cd fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 12:49:33 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d0001bf4ca9 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 12:49:37 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:49:47 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:49:57 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:50:04 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d0001bf4ca9 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 12:50:04 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d000200a8cd fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 12:50:07 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:50:17 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:50:27 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:50:35 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d000200a8cd fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 12:50:35 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d0001bf4ca9 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 12:50:37 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:50:47 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:50:57 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:51:06 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d0001bf4ca9 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 12:51:06 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d000200a8cd fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 12:51:07 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:51:17 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 12:52:49 ERROR (Thread-4) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 12:52:49 ERROR (Thread-4) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:00:29 ERROR (MainThread) [homeassistant.components.light.hue] Unable to reach bridge 192.168.2.52
+2018-06-08 13:00:34 ERROR (Thread-16) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:00:34 ERROR (Thread-16) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:00:44 ERROR (Thread-12) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:00:44 ERROR (Thread-12) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:00:54 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 13:01:05 ERROR (Thread-9) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:01:05 ERROR (Thread-9) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:01:15 ERROR (Thread-20) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:01:15 ERROR (Thread-20) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:01:17 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 13:05:39 ERROR (MainThread) [homeassistant.components.light.hue] Unable to reach bridge 192.168.2.52
+2018-06-08 13:05:43 ERROR (Thread-19) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:05:43 ERROR (Thread-19) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:05:53 ERROR (Thread-11) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:05:53 ERROR (Thread-11) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:06:14 ERROR (Thread-5) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:06:14 ERROR (Thread-5) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:06:14 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 13:06:24 ERROR (Thread-9) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:06:24 ERROR (Thread-9) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:06:44 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 13:06:45 ERROR (Thread-12) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:06:45 ERROR (Thread-12) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:06:55 ERROR (Thread-4) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:06:55 ERROR (Thread-4) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:07:14 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 13:07:16 ERROR (Thread-18) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:07:16 ERROR (Thread-18) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:07:26 ERROR (Thread-9) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:07:26 ERROR (Thread-9) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:07:44 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 13:07:47 ERROR (Thread-17) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:07:47 ERROR (Thread-17) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:07:57 ERROR (Thread-4) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:07:57 ERROR (Thread-4) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:08:15 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 13:08:18 ERROR (Thread-10) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:08:18 ERROR (Thread-10) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:08:28 ERROR (Thread-9) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:08:28 ERROR (Thread-9) [xiaomi_gateway] No data in response from hub None
+2018-06-08 13:08:30 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 13:08:39 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d000200a8cd fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 13:08:39 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d0001bf4ca9 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 13:08:40 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 13:08:50 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 13:09:00 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 13:09:10 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 13:09:10 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d000200a8cd fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 13:09:10 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d0001bf4ca9 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 13:09:19 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/discovery.py", line 162, in scan_devices
+    results = await hass.async_add_job(_discover, netdisco)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/discovery.py", line 188, in _discover
+    netdisco.scan()
+  File "/srv/homeassistant/lib/python3.5/site-packages/netdisco/discovery.py", line 60, in scan
+    self.gdm.scan()
+  File "/srv/homeassistant/lib/python3.5/site-packages/netdisco/gdm.py", line 22, in scan
+    self.update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/netdisco/gdm.py", line 77, in update
+    sock.sendto(gdm_msg, (gdm_ip, gdm_port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 13:09:30 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] wrong status 409
+2018-06-08 13:44:27 ERROR (Thread-20) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 13:44:27 ERROR (Thread-20) [xiaomi_gateway] No data in response from hub None
+2018-06-08 14:27:58 ERROR (MainThread) [homeassistant.components.sensor.template] Could not render template Xiaomi Basement Motion Sensor: UndefinedError: 'mappingproxy object' has no attribute 'battery_level'
+2018-06-08 14:28:19 ERROR (MainThread) [homeassistant.components.sensor.template] Could not render template Xiaomi Garage Motion Sensor: UndefinedError: 'mappingproxy object' has no attribute 'battery_level'
+2018-06-08 14:30:40 ERROR (MainThread) [homeassistant.components.sensor.template] Could not render template Xiaomi Button 1: UndefinedError: 'mappingproxy object' has no attribute 'battery_level'
+2018-06-08 14:41:23 ERROR (MainThread) [homeassistant.components.sensor.template] Could not render template Xiaomi Entrance Motion Sensor: UndefinedError: 'mappingproxy object' has no attribute 'battery_level'
+2018-06-08 15:04:42 ERROR (MainThread) [homeassistant.components.sensor.template] Could not render template Xiaomi Main Door Sensor: UndefinedError: 'mappingproxy object' has no attribute 'battery_level'
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh pi@homeserver sudo systemctl restart home-assistant@homeassistant`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:05:03 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 15:20:25 ERROR (Thread-21) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 15:20:25 ERROR (Thread-21) [xiaomi_gateway] No data in response from hub None
+2018-06-08 16:14:09 ERROR (Thread-16) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 16:14:09 ERROR (Thread-16) [xiaomi_gateway] No data in response from hub None
+2018-06-08 16:14:19 ERROR (Thread-11) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 16:14:19 ERROR (Thread-11) [xiaomi_gateway] No data in response from hub None
+2018-06-08 16:14:28 ERROR (MainThread) [homeassistant.components.light.hue] Unable to reach bridge 192.168.2.52
+2018-06-08 16:14:37 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 16:14:40 ERROR (Thread-18) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 16:14:40 ERROR (Thread-18) [xiaomi_gateway] No data in response from hub None
+2018-06-08 16:14:50 ERROR (Thread-22) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 16:14:50 ERROR (Thread-22) [xiaomi_gateway] No data in response from hub None
+2018-06-08 16:15:07 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 16:15:11 ERROR (Thread-9) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 16:15:11 ERROR (Thread-9) [xiaomi_gateway] No data in response from hub None
+2018-06-08 16:15:21 ERROR (Thread-10) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 16:15:21 ERROR (Thread-10) [xiaomi_gateway] No data in response from hub None
+2018-06-08 16:15:37 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 16:15:42 ERROR (Thread-2) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 16:15:42 ERROR (Thread-2) [xiaomi_gateway] No data in response from hub None
+2018-06-08 16:15:52 ERROR (Thread-3) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 16:15:52 ERROR (Thread-3) [xiaomi_gateway] No data in response from hub None
+2018-06-08 16:16:07 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 16:16:13 ERROR (Thread-14) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 16:16:13 ERROR (Thread-14) [xiaomi_gateway] No data in response from hub None
+2018-06-08 16:16:23 ERROR (Thread-4) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 16:16:23 ERROR (Thread-4) [xiaomi_gateway] No data in response from hub None
+2018-06-08 16:16:37 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 16:16:44 ERROR (Thread-13) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 16:16:44 ERROR (Thread-13) [xiaomi_gateway] No data in response from hub None
+2018-06-08 16:16:44 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d0001bf4ca9 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 16:16:47 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 16:16:57 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 16:17:05 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d000200a8cd fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 16:17:05 ERROR (MainThread) [homeassistant.helpers.entity] Update for binary_sensor.door_window_sensor_158d0001bf4ca9 fails
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 204, in async_update_ha_state
+    yield from self.async_device_update()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity.py", line 327, in async_device_update
+    yield from self.hass.async_add_job(self.update)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/binary_sensor/xiaomi_aqara.py", line 90, in update
+    self._get_from_hub(self._sid)
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 362, in get_from_hub
+    resp = self._send_cmd(cmd, "read_ack") if int(self.proto[0:1]) == 1 else self._send_cmd(cmd, "read_rsp")
+  File "/srv/homeassistant/lib/python3.5/site-packages/xiaomi_gateway/__init__.py", line 295, in _send_cmd
+    self._socket.sendto(cmd.encode(), (self.ip_adress, self.port))
+OSError: [Errno 101] Network is unreachable
+2018-06-08 16:17:07 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 16:17:17 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 16:17:27 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:True [Temporary failure in name resolution]
+2018-06-08 16:18:36 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] wrong status 409
+2018-06-08 16:20:21 ERROR (Thread-5) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 16:20:21 ERROR (Thread-5) [xiaomi_gateway] No data in response from hub None
+2018-06-08 16:30:07 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 16:30:07 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 17:54:17 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 17:54:17 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 18:16:33 ERROR (Thread-22) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 18:16:33 ERROR (Thread-22) [xiaomi_gateway] No data in response from hub None
+2018-06-08 18:59:25 ERROR (Thread-17) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 18:59:25 ERROR (Thread-17) [xiaomi_gateway] No data in response from hub None
+2018-06-08 21:13:32 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] wrong status 502
+2018-06-08 21:28:42 ERROR (Thread-5) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-08 21:28:43 ERROR (Thread-5) [xiaomi_gateway] No data in response from hub None
+2018-06-08 23:49:49 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None
+2018-06-08 23:49:49 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `ssh osmc@mediaserver bash /home/osmc/humair/scripts/take_snapshot_webcam.sh`, return code: -15
+NoneType: None

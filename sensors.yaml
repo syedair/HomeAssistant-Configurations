@@ -1,3 +1,9 @@
+- platform: mqtt
+  name: humair_presence
+  state_topic: "home/presence/humair"
+- platform: mqtt
+  name: tauseef_presence
+  state_topic: "home/presence/tauseef"
 # - platform: mqtt
   # state_topic: "home/room3/pir/state"
   # name: "pir sensor @ room3"
