@@ -12,31 +12,16 @@
       ringtone_vol: 10
     service: xiaomi_aqara.play_ringtone
   - data:
-      data:
-        keyboard:
-        - /picture, /video
       message: Main Entrance Door Opened
       title: Intruder Alert
     service: notify.notifyhumair
   - data:
+      message: Main Entrance Door Opened
+      title: Intruder Alert
+    service: notify.notifytauseef
+  - data:
       entity_id: script.webcam_snapshot
     service: homeassistant.turn_on
-- action: []
-  alias: Auto Lights Off At Sunrise
-  condition: []
-  id: '13'
-  trigger:
-  - event: sunrise
-    offset: +00:30
-    platform: sun
-- action: []
-  alias: Auto Lights On At Sunset
-  condition: []
-  id: '14'
-  trigger:
-  - event: sunset
-    offset: -00:30
-    platform: sun
 - alias: Single Click to toggle living room lights
   id: '16'
   trigger:
@@ -157,3 +142,63 @@
       event: Xiaomi_Available
       value1: Xiaomi is Available now
     service: ifttt.trigger
+- id: '1528855480276'
+  alias: Humair - Notify Presence - Left Office
+  trigger:
+  - entity_id: sensor.humair_presence
+    platform: state
+    to: Left Work
+  condition: []
+  action:
+  - service: notify.notifytauseef
+    data:
+      message: Left Office
+      title: Humair
+- id: '1528855480376'
+  alias: Humair - Notify Presence - At Home
+  trigger:
+  - entity_id: sensor.humair_presence
+    platform: state
+    to: At Home
+  condition: []
+  action:
+  - service: notify.notifytauseef
+    data:
+      message: Arrived Home
+      title: Humair
+- id: '1528855480476'
+  alias: Humair - Notify Presence - At Office
+  trigger:
+  - entity_id: sensor.humair_presence
+    platform: state
+    to: At Work
+  condition: []
+  action:
+  - service: notify.notifytauseef
+    data:
+      message: Arrived at Office
+      title: Humair
+- id: '1528855480576'
+  alias: Tauseef - Notify Presence - Arrived Home
+  trigger:
+  - entity_id: sensor.tauseef_presence
+    platform: state
+    to: At Home
+  condition: []
+  action:
+  - service: notify.notifyhumair
+    data:
+      message: Arrived Home
+      title: Tauseef
+- id: '1528855480676'
+  alias: Tauseef - Notify Presence - Left Home
+  trigger:
+  - entity_id: sensor.tauseef_presence
+    platform: state
+    to: Left Home
+  condition: []
+  action:
+  - service: notify.notifyhumair
+    data:
+      message: Left Home
+      title: Tauseef
