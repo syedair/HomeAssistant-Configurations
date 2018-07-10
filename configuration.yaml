@@ -60,8 +60,8 @@ media_player:
     port: 8080
     name: OSMC
   - platform: samsungtv
-    host: 192.168.2.72 
-    name: Samsung TV
+    host: 192.168.2.15
+    name: Samsung tv
     
 # Text to speech
 tts:
@@ -162,6 +162,7 @@ hue:
     - host: 192.168.2.52
       allow_unreachable: true
       allow_hue_groups: true
+wemo:
 
 # alexa:
 # intent_script:

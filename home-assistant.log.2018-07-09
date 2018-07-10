@@ -1,0 +1,6 @@
+2018-07-09 19:22:08 ERROR (Thread-22) [xiaomi_gateway] Cannot connect to Gateway
+2018-07-09 19:22:08 ERROR (Thread-22) [xiaomi_gateway] No data in response from hub None
+2018-07-09 19:30:24 ERROR (Thread-13) [xiaomi_gateway] Cannot connect to Gateway
+2018-07-09 19:30:24 ERROR (Thread-13) [xiaomi_gateway] No data in response from hub None
+2018-07-09 20:26:30 ERROR (MainThread) [homeassistant.components.light.hue] Unable to reach bridge 192.168.2.52
+2018-07-09 21:16:39 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] wrong status 502

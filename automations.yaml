@@ -7,11 +7,6 @@
   condition: []
   action:
   - data:
-      gw_mac: 78:11:DC:DC:2B:AE
-      ringtone_id: 10
-      ringtone_vol: 10
-    service: xiaomi_aqara.play_ringtone
-  - data:
       message: Main Entrance Door Opened
       title: Intruder Alert
     service: notify.notifyhumair
@@ -40,8 +35,8 @@
   - data:
       entity_id: light.white_lamp_1
     service: light.toggle
-- alias: If there is motion and its dark turn on the gateway light
-  id: '17'
+- id: '17'
+  alias: If there is motion and its dark turn on the gateway light
   trigger:
   - entity_id: binary_sensor.motion_sensor_158d0001f46e9e
     from: 'off'
@@ -53,7 +48,7 @@
     entity_id: sensor.illumination_7811dcdc2bae
   action:
   - data:
-      brightness: 5
+      brightness: 10
     entity_id: light.gateway_light_7811dcdc2bae
     service: light.turn_on
   - data:
@@ -87,27 +82,28 @@
       entity_id: binary_sensor.switch_158d0001243b98
     event_type: click
     platform: event
-- action:
+- id: '1524098486581'
+  alias: Exterior Lights ON at Sunset
+  trigger:
+  - event: sunset
+    platform: sun
+  condition: []
+  action:
   - data:
-      brightness: 10
-    service: light.turn_on
+      entity_id: switch.exterior_lights
     entity_id: light.gateway_light_7811dcdc2bae
-  alias: Light on till Sunrise
-  condition: []
-  id: '1524098486581'
-  trigger:
-  - event: sunrise
-    offset: -00:60
-    platform: sun
-- action:
-  - service: light.turn_off
-    entity_id: light.gateway_light_7811dcdc2bae
-  alias: Light After Sunrise
-  condition: []
-  id: '1524098673901'
+    service: switch.turn_on
+- id: '1524098673901'
+  alias: Exterior Lights Off on Sunrise
   trigger:
   - event: sunrise
     platform: sun
+  condition: []
+  action:
+  - data:
+      entity_id: switch.exterior_lights
+    entity_id: light.gateway_light_7811dcdc2bae
+    service: switch.turn_off
 - action:
   - service: ifttt.trigger
     data:
