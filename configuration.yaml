@@ -14,8 +14,8 @@ homeassistant:
 
 logger:
   default: error
-#  logs:
-#    #homeassistant.components.xiaomi_aqara: debug
+  logs:
+    homeassistant.components.hydroquebec: debug
 
 # Show links to resources in log and frontend
 #introduction:
@@ -182,6 +182,14 @@ wemo:
     # speech:
       # type: plain
       # text: OK
+
+media_extractor:
+  default_query: worst
+  customize:
+    media_player.mibox3:
+      video: bestvideo
+      music: bestaudio[ext=mp3]
+
 #cloud: !include cloud.yaml
 group: !include groups.yaml
 script: !include scripts.yaml

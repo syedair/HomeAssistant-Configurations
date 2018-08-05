@@ -24,3 +24,6 @@ pyozw.sqlite
 nest.conf
 .uuid
 ipchange.yaml
+*.log
+*.log*
+entity_registry.yaml

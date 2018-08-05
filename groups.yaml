@@ -31,12 +31,12 @@ Battery Level:
     - sensor.garage_motion_sensor_bat
     - sensor.patio_door_sensor_bat
     - sensor.garage_door_sensor_bat
-Lights:
-  entities:
-    - light.color_lamp_1
-    - light.color_lamp_2
-    - light.color_lamp_3
-    - light.white_lamp_1
-    - light.gateway_light_7811dcdc2bae
-    - light.living_room_dimmer
-    - switch.exterior_lights
+#Light:
+#  entities:
+#    - light.color_lamp_1
+#    - light.color_lamp_2
+#    - light.color_lamp_3
+#    - light.white_lamp_1
+#    - light.gateway_light_7811dcdc2bae
+#    - light.living_room_dimmer
+#    - switch.exterior_lights

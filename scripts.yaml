@@ -1,38 +1,46 @@
 webcam_snapshot:
   alias: Take Webcam Snapshots
   sequence:
-    - service: shell_command.take_snapshot_webcam
+  - service: shell_command.take_snapshot_webcam
 check_webcam_snapshot:
   alias: Check if Webcam Image is taken
   sequence:
-    - service: shell_command.check_snapshot_webcam
+  - service: shell_command.check_snapshot_webcam
 archive_webcam_snapshot:
   alias: Archive once the image is sent
   sequence:
-    - service: shell_command.archive_snapshot_webcam
+  - service: shell_command.archive_snapshot_webcam
 webcam_video:
   alias: Take Webcam Video
   sequence:
-    - service: shell_command.take_video_webcam
+  - service: shell_command.take_video_webcam
 check_webcam_video:
   alias: Check if Webcam Video is running
   sequence:
-    - service: shell_command.check_video_webcam
+  - service: shell_command.check_video_webcam
 archive_webcam_video:
   alias: Archive once the video is sent
   sequence:
-    - service: shell_command.archive_video_webcam
+  - service: shell_command.archive_video_webcam
 restart_homeassistant:
   alias: Restart Home Assistant
   sequence:
-    - service: shell_command.restart_homeassistant
+  - service: shell_command.restart_homeassistant
 test_script:
   alias: test script
   sequence:
-    - data:
-        data:
-          keyboard:
-          - /picture, /video
-        message: Sent by Alexa
-        title: Alexa
-      service: notify.notifyhumair
+  - data:
+      data:
+        keyboard:
+        - /picture, /video
+      message: Sent by Alexa
+      title: Alexa
+    service: notify.notifyhumair
+'1533436204670':
+  alias: Play Azan
+  sequence:
+  - data:
+      entity_id: media_player.mibox3
+      media_content_id: https://www.youtube.com/watch?v=tPXAB5sQMs0
+      media_content_type: bestvideo
+    service: media_extractor.play_media

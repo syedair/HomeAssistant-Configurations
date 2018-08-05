@@ -12,6 +12,14 @@
                 "source": "import",
                 "title": "Philips hue",
                 "version": 1
+            },
+            {
+                "data": {},
+                "domain": "cast",
+                "entry_id": "0be19ff56bff4a479eaab82f974b21ae",
+                "source": "discovery",
+                "title": "Google Cast",
+                "version": 1
             }
         ]
     },

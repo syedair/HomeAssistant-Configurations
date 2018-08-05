@@ -197,3 +197,11 @@
           mdi:battery-charging-wireless-outline
         {% endif %}
       unit_of_measurement: '%'
+#- platform: rest
+#  resource: 'http://api.aladhan.com/v1/calendarByCity?city=Montreal&country=Canada&method=0&midnightmode=1'
+#  name: Maghrib Azan
+#  value_template: '{{ value_json.data.0.timings.Maghrib }}'
+- platform: command_line
+  name: Maghrib Azan Time
+  command: 'ssh pi@homeserver bash /home/pi/humair/scripts/get_latest_maghib_time.sh'
+

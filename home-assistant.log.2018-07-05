@@ -1,7 +1,0 @@
-2018-07-05 05:28:21 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:None [Temporary failure in name resolution]
-2018-07-05 05:28:51 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:None [Temporary failure in name resolution]
-2018-07-05 05:29:21 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:None [Temporary failure in name resolution]
-2018-07-05 05:29:46 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] Cannot connect to host api.telegram.org:443 ssl:None [Temporary failure in name resolution]
-2018-07-05 06:46:14 ERROR (MainThread) [homeassistant.components.light.hue] Unable to reach bridge 192.168.2.52
-2018-07-05 14:17:53 ERROR (Thread-13) [xiaomi_gateway] Got error element in data {"error":"Invalid key"}
-2018-07-05 21:16:05 ERROR (MainThread) [homeassistant.components.telegram_bot.polling] wrong status 502
