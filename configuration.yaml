@@ -16,6 +16,7 @@ logger:
   default: error
   logs:
     homeassistant.components.hydroquebec: debug
+    homeassistant.components.xiaomi_aqara: debug
 
 # Show links to resources in log and frontend
 #introduction:
@@ -132,14 +133,6 @@ shell_command:
 device_tracker:
   - platform: owntracks
 
-switch:
-  - platform: mqtt
-    name: alarm
-    command_topic: "home/alarm/state"
-  - platform: mqtt
-    name: home_presence
-    command_topic: "home/presence/family"
-
 #camera:
 #  - platform: local_file
 #    file_path: /tmp/image.jpg
@@ -189,6 +182,8 @@ media_extractor:
     media_player.mibox3:
       video: bestvideo
       music: bestaudio[ext=mp3]
+
+python_script:
 
 #cloud: !include cloud.yaml
 group: !include groups.yaml

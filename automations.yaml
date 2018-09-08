@@ -39,17 +39,17 @@
       entity_id: light.staircase
     service: light.turn_on
 - id: '17'
-  alias: If there is motion and its dark turn on the gateway light
+  alias: Motion Gateway Light - ON
   trigger:
-  - entity_id: binary_sensor.motion_sensor_158d0001f46e9e
+  - entity_id: binary_sensor.motion_sensor_livingroom
     from: 'off'
     platform: state
     to: 'on'
   condition:
   - below: '300'
     condition: numeric_state
-    entity_id: sensor.illumination_7811dcdc2bae
-  - after: '21:00'
+    entity_id: sensor.illumination_xiaomi
+  - after: '22:00'
     before: 06:00
     condition: time
   action:
@@ -61,14 +61,10 @@
       - 255
       - 255
     service: light.turn_on
-  - data:
-      brightness: 100
-      entity_id: light.staircase
-    service: light.turn_on
 - id: '18'
-  alias: If there no motion for 5 minutes turn off the gateway light
+  alias: Motion Gateway Light - OFF
   trigger:
-  - entity_id: binary_sensor.motion_sensor_158d0001f46e9e
+  - entity_id: binary_sensor.motion_sensor_livingroom
     for:
       minutes: 5
     from: 'on'
@@ -77,9 +73,6 @@
   action:
   - data:
       entity_id: light.gateway_light_7811dcdc2bae
-    service: light.turn_off
-  - data:
-      entity_id: light.staircase
     service: light.turn_off
 - id: '1523705703675'
   alias: Double Click to switch OFF Living Room Lights
@@ -104,6 +97,7 @@
   alias: Exterior Lights ON at Sunset
   trigger:
   - event: sunset
+    offset: +00:30:00
     platform: sun
   condition: []
   action:
@@ -114,6 +108,7 @@
   alias: Exterior Lights Off on Sunrise
   trigger:
   - event: sunrise
+    offset: -01:00:00
     platform: sun
   condition: []
   action:
@@ -217,8 +212,9 @@
 - id: '1533444272995'
   alias: Test
   trigger:
-    platform: template
-    value_template: '{{ now.time().strftime("%H:%M") == states.maghrib_azan_time.state }}'
+  - platform: template
+    value_template: '{{ now().time().strftime("%H:%M") == states.sensor.maghrib_azan_time.state
+      }}'
   condition: []
   action:
   - data:
@@ -226,3 +222,92 @@
       media_content_id: https://www.youtube.com/watch?v=tPXAB5sQMs0
       media_content_type: best
     service: media_extractor.play_media
+- id: '1534616461690'
+  alias: Hydro Consumption Notification 1
+  trigger:
+  - at: '15:00'
+    platform: time
+  condition:
+  - condition: template
+    value_template: '{{ states.sensor.hydroquebec_period_total_bill.state| float >
+      80 }}'
+  action:
+  - data_template:
+      message: Consumption is {{ states.sensor.hydroquebec_period_total_bill.state|
+        float }} for {{ states.sensor.hydroquebec_period_length.state | float }} days
+      title: Hydro Consumption
+    service: notify.notifyhumair
+  - data_template:
+      message: Consumption is {{ states.sensor.hydroquebec_period_total_bill.state|
+        float }} for {{ states.sensor.hydroquebec_period_length.state| float }} days
+      title: Hydro Consumption
+    service: notify.notifytauseef
+- id: '1535874317727'
+  alias: Motion Staircase Light - ON
+  trigger:
+  - entity_id: binary_sensor.motion_sensor_stairs
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+  - below: '30'
+    condition: numeric_state
+    entity_id: sensor.illumination_stairs
+  - after: '20:00'
+    before: 06:00
+    condition: time
+  action:
+  - data:
+      brightness: 10
+      entity_id: light.staircase
+    service: light.turn_on
+- id: '1535874769635'
+  alias: Motion Staircase Light - OFF
+  trigger:
+  - entity_id: binary_sensor.motion_sensor_stairs
+    for:
+      minutes: 1
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition:
+  - after: '20:00'
+    before: 06:00
+    condition: time
+  action:
+  - data:
+      entity_id: light.staircase
+    service: light.turn_off
+- id: '1535940084179'
+  alias: Motion Bedroom1 Light - ON
+  trigger:
+  - entity_id: binary_sensor.motion_sensor_bedroom1
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+  - below: '30'
+    condition: numeric_state
+    entity_id: sensor.illumination_bedroom1
+  action:
+  - data:
+      brightness: 10
+      entity_id: light.bedroom1
+    service: light.turn_on
+- id: '1535940578685'
+  alias: Motion Bedroom1 Light - OFF
+  trigger:
+  - entity_id: binary_sensor.motion_sensor_bedroom1
+    for:
+      minutes: 1
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition:
+  - after: '21:00'
+    before: 06:00
+    condition: time
+  action:
+  - data:
+      entity_id: light.bedroom1
+    service: light.turn_off

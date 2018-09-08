@@ -1,0 +1,40 @@
+title: Humair's Home
+# Include external resources
+#resources:
+#  - url: /local/my-custom-card.js
+#    type: js
+#  - url: /local/my-webfont.css
+#    type: css
+
+# Optional background for all views. Check https://developer.mozilla.org/en-US/docs/Web/CSS/background for more examples.
+# background: center / cover no-repeat url("/background.png") fixed
+# Exclude entities from "Unused entities" view
+#excluded_entities:
+#  - weblink.router
+views:
+    # View tab title.
+  - title: Home
+    # Optional unique id for direct access /lovelace/${id}
+    id: home
+    # Optional background (overwrites the global background).
+    background: radial-gradient(crimson, skyblue)
+    # Each view can have a different theme applied. Theme should be defined in the frontend.
+    theme: dark-mode
+    # The cards to show on this view.
+    cards:
+        # The filter card will filter entities for their state
+      - type: entities
+        entities:
+          - sensor.tauseef_presence
+          - sensor.humair_presence
+        card:
+          type: glance
+          title: Presence
+
+        # Entities card will take a list of entities and show their state.
+      - type: entities
+        title: Lights
+        entities:
+          - light.living_room
+          - light.bedroom
+          - switch.exterior_lights

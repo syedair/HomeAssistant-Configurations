@@ -6,11 +6,6 @@
    - period_total_bill
    - period_length
    - period_total_days
-   - period_lower_price_consumption
-   - period_higher_price_consumption
-   - yesterday_total_consumption
-   - yesterday_lower_price_consumption
-   - yesterday_higher_price_consumption 
 - platform: mqtt
   name: humair_presence
   state_topic: "home/presence/humair"
@@ -41,15 +36,22 @@
 - platform: template
   sensors:
     presence_all:
-      value_template: "{{ states.media_player.samsung_tv_remote == 'on' or states.binary_sensor.motion_sensor_158d0001f46e9e.state == 'on' or states.binary_sensor.door_window_sensor_158d0002278850.state == 'on' or states.binary_sensor.motion_sensor_158d0001a9235d.state == 'on' or states.binary_sensor.motion_sensor_158d0001aeb665.state == 'on' or states.binary_sensor.door_window_sensor_158d0001bf4ca9.state == 'on' or states.binary_sensor.door_window_sensor_158d000200a8cd.state == 'on'}}"
+      value_template: "{{ states.media_player.samsung_tv_remote == 'on' or states.binary_sensor.motion_sensor_entrance.state == 'on' or states.binary_sensor.motion_sensor_garage.state == 'on' or states.binary_sensor.motion_sensor_bedroom1.state == 'on' or states.binary_sensor.motion_sensor_bedroom2.state == 'on' or states.binary_sensor.motion_sensor_masterbedroom.state == 'on' or states.binary_sensor.motion_sensor_livingroom.state == 'on' or states.binary_sensor.motion_sensor_stairs_state == 'on' or states.binary_sensor.motion_sensor_basement.state == 'on' or states.binary_sensor.motion_sensor_corridor.state == 'on' or states.binary_sensor.door_window_sensor_patio.state == 'on' or states.binary_sensor.door_window_sensor_entrance.state == 'on' or states.binary_sensor.door_window_sensor_garage.state == 'on'}}"
       entity_id:
-        - binary_sensor.motion_sensor_158d0001f46e9e
         - media_player.samsung_tv_remote
-        - binary_sensor.door_window_sensor_158d0002278850
-        - binary_sensor.motion_sensor_158d0001a9235d
-        - binary_sensor.motion_sensor_158d0001aeb665
-        - binary_sensor.door_window_sensor_158d0001bf4ca9
-        - binary_sensor.door_window_sensor_158d000200a8cd
+        - binary_sensor.motion_sensor_entrance
+        - binary_sensor.motion_sensor_garage
+        - binary_sensor.motion_sensor_bedroom1
+        - binary_sensor.motion_sensor_bedroom2
+        - binary_sensor.motion_sensor_masterbedroom
+        - binary_sensor.motion_sensor_livingroom
+        - binary_sensor.motion_sensor_stairs
+        - binary_sensor.motion_sensor_basement
+        - binary_sensor.motion_sensor_corridor
+        - binary_sensor.door_window_sensor_patio
+        - binary_sensor.door_window_sensor_entrance
+        - binary_sensor.door_window_sensor_garage
+
 - platform: template
   sensors:
     main_door_sensor_bat:
@@ -203,5 +205,5 @@
 #  value_template: '{{ value_json.data.0.timings.Maghrib }}'
 - platform: command_line
   name: Maghrib Azan Time
+  scan_interval: 28800
   command: 'ssh pi@homeserver bash /home/pi/humair/scripts/get_latest_maghib_time.sh'
-

@@ -4,23 +4,37 @@
 Presence Sensors:
   entities:
     - sensor.presence_all
-    - binary_sensor.motion_sensor_158d0001f46e9e
-    - binary_sensor.motion_sensor_158d0001a9235d
-    - binary_sensor.motion_sensor_158d0001aeb665
-    - binary_sensor.door_window_sensor_158d0001bf4ca9
-    - binary_sensor.door_window_sensor_158d000200a8cd
-    - binary_sensor.door_window_sensor_158d0002278850
+    - binary_sensor.motion_sensor_entrance
+    - binary_sensor.motion_sensor_garage
+    - binary_sensor.motion_sensor_bedroom1
+    - binary_sensor.motion_sensor_bedroom2
+    - binary_sensor.motion_sensor_masterbedroom
+    - binary_sensor.motion_sensor_livingroom
+    - binary_sensor.motion_sensor_stairs
+    - binary_sensor.motion_sensor_basement
+    - binary_sensor.motion_sensor_corridor
+    - binary_sensor.door_window_sensor_patio
+    - binary_sensor.door_window_sensor_entrance
+    - binary_sensor.door_window_sensor_garage
 People:
   entities:
     - sensor.humair_presence
     - sensor.tauseef_presence
 Sensors:
   entities:
-    - sensor.illumination_7811dcdc2bae
-Swtiches:
+    - sensor.illumination_xiaomi
+    - sensor.illumination_livingroom
+    - sensor.illumination_corridor
+    - sensor.illumination_stairs
+    - sensor.illumination_masterbedroom
+    - sensor.illumination_bedroom1
+    - sensor.illumination_bedroom2
+
+Electricity Usage:
   entities:
-    - switch.alarm
-    - binary_sensor.switch_158d0001243b98
+    - sensor.hydroquebec_period_total_bill
+    - sensor.hydroquebec_period_length
+    - sensor.hydroquebec_period_total_days
     
 Battery Level:
   entities:
@@ -31,12 +45,3 @@ Battery Level:
     - sensor.garage_motion_sensor_bat
     - sensor.patio_door_sensor_bat
     - sensor.garage_door_sensor_bat
-#Light:
-#  entities:
-#    - light.color_lamp_1
-#    - light.color_lamp_2
-#    - light.color_lamp_3
-#    - light.white_lamp_1
-#    - light.gateway_light_7811dcdc2bae
-#    - light.living_room_dimmer
-#    - switch.exterior_lights
