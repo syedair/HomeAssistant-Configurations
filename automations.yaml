@@ -1,7 +1,7 @@
 - id: '6'
   alias: Notification Presence Detection - Entrance
   trigger:
-  - entity_id: binary_sensor.door_window_sensor_158d0002278850
+  - entity_id: binary_sensor.door_window_sensor_entrance
     platform: state
     to: 'on'
   condition: []
@@ -28,11 +28,11 @@
   action:
   - data:
       brightness: '175'
-      entity_id: light.dinning_room
+      entity_id: light.dining_room
     service: light.turn_on
   - data:
       brightness: '255'
-      entity_id: light.living_room
+      entity_id: light.lounge
     service: light.turn_on
   - data:
       brightness: '60'
@@ -85,13 +85,13 @@
   condition: []
   action:
   - data:
-      entity_id: light.dinning_room
+      entity_id: light.dining_room
     service: light.turn_off
   - data:
       entity_id: light.staircase
     service: light.turn_off
   - data:
-      entity_id: light.living_room
+      entity_id: light.lounge
     service: light.turn_off
 - id: '1524098486581'
   alias: Exterior Lights ON at Sunset
@@ -286,12 +286,12 @@
     platform: state
     to: 'on'
   condition:
-  - below: '30'
-    condition: numeric_state
-    entity_id: sensor.illumination_bedroom1
+  - after: '20:00'
+    before: 06:00
+    condition: time
   action:
   - data:
-      brightness: 10
+      brightness: 1
       entity_id: light.bedroom1
     service: light.turn_on
 - id: '1535940578685'
@@ -311,3 +311,46 @@
   - data:
       entity_id: light.bedroom1
     service: light.turn_off
+- id: '1536894450619'
+  alias: Motion Bedroom1 Light - ON (day)
+  trigger:
+  - entity_id: binary_sensor.motion_sensor_bedroom1
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+  - below: '30'
+    condition: numeric_state
+    entity_id: sensor.illumination_bedroom1
+  - after: 06:00
+    before: '20:00'
+    condition: time
+  action:
+  - data:
+      brightness: 255
+      entity_id: light.bedroom1
+    service: light.turn_on
+- id: '1542750904651'
+  alias: Humair - Notify Presence - At Train Station
+  trigger:
+  - entity_id: sensor.humair_presence
+    platform: state
+    to: At Train Station
+  condition: []
+  action:
+  - data:
+      message: Arrived at Train Station
+      title: Humair
+    service: notify.notifytauseef
+- id: '1542750989465'
+  alias: Humair - Notify Presence - Left Train Station
+  trigger:
+  - entity_id: sensor.humair_presence
+    platform: state
+    to: Left Train Station
+  condition: []
+  action:
+  - data:
+      message: Leaving Train Station
+      title: Humair
+    service: notify.notifytauseef

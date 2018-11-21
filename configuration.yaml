@@ -14,9 +14,10 @@ homeassistant:
 
 logger:
   default: error
-  logs:
-    homeassistant.components.hydroquebec: debug
-    homeassistant.components.xiaomi_aqara: debug
+#  logs:
+#    homeassistant.components.homekit: debug
+#    homeassistant.components.hydroquebec: debug
+#    homeassistant.components.xiaomi_aqara: debug
 
 # Show links to resources in log and frontend
 #introduction:
@@ -54,6 +55,15 @@ logbook:
 
 # Track the sun
 sun:
+
+# Apple Home Kit
+homekit:
+  filter:
+    include_domains:
+      - light
+      - sensor
+      - media_player
+      - switch
 
 media_player:
   - platform: kodi
@@ -150,11 +160,11 @@ xiaomi_aqara:
       key: !secret xiomi_gw_key
       host: !secret xiomi_gw_ip
 
-hue:
-  bridges:
-    - host: 192.168.2.52
-      allow_unreachable: true
-      allow_hue_groups: true
+#hue:
+#  bridges:
+#    - host: 192.168.2.52
+#      allow_unreachable: true
+#      allow_hue_groups: true
 wemo:
 
 # alexa:
